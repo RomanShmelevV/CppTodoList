@@ -11,10 +11,10 @@ int main() {
 
     list.addTask(testTask);
     list.completeTask(testTask);
-//    if(!list.addTask(testTask))
-//    {
-//        cout << "WAS UNABLE TO ADD NEW TASK: " + testTask.display();
-//    }
+    if(!list.addTask(testTask))
+    {
+        cout << "WAS UNABLE TO ADD NEW TASK: " + testTask.display();
+    }
 
     auto resultList = list.resolvedTasks();
 

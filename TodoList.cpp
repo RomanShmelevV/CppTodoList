@@ -24,7 +24,7 @@ bool TodoList::addTask(Task task) {
 
 void TodoList::completeTask(Task task) {
     for (int i = 0; i < tasks.size(); i++) {
-        if (tasks[i].name == task.name) {
+        if (tasks[i].getName() == task.getName()) {
             tasks[i].status = RESOLVED;
         }
     }

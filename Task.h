@@ -7,17 +7,27 @@
 
 #include<string>
 #include "TaskStatus.h"
+#include <ctime>
+#include <chrono>
 
 using namespace std;
 
 class Task {
 public:
+    void setName(string name);
+    string getName();
+    string display();
+    void setDesctiprion();
+    string getDesctiprion();
+    TaskStatus getStatus();
+    Task();
+    Task(string name, string descriprition);
+private:
+    time_t CreationTime;
     string name;
     string description;
     int dueTo;
     TaskStatus status = ACTIVE;
-
-    string display();
 };
 
 #endif //UNTITLED_TASK_H
