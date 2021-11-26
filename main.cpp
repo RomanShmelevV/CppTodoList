@@ -16,6 +16,7 @@ int main() {
         cout << "WAS UNABLE TO ADD NEW TASK: " + testTask.display();
     }
 
+
     auto resultList = list.resolvedTasks();
 
     for (auto resultTask: resultList) {

@@ -11,3 +11,4 @@ enum TaskStatus {
 };
 
 #endif //UNTITLED_TASKSTATUS_H
+

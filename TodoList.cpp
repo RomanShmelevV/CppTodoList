@@ -41,6 +41,7 @@ vector<Task> TodoList::activeTasks() {
 }
 
 
+
 vector<Task> TodoList::resolvedTasks() {
     vector<Task> activeTasks;
     for (int i = 0; i < tasks.size(); i++) {
